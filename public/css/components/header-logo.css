@@ -1,0 +1,12 @@
+.header-logo {
+    height: var(--v-16);
+    width: var(--v-16);
+
+    padding: var(--v-2);
+    margin-right: var(--v-4);
+
+    border: var(--border-1px-semi);
+    border-radius: var(--rounded-xl);
+
+    box-shadow: var(--shadow-sm);
+}

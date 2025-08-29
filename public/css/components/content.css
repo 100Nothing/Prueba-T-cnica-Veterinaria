@@ -1,0 +1,19 @@
+#content {
+    box-sizing: border-box;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+
+    min-height: var(--v-zero);
+    height: var(--v-full);
+    min-width: var(--v-zero);
+    width: var(--v-full);
+
+    padding: var(--v-4);
+    margin: var(--v-zero);
+
+    gap: var(--v-4);
+}

@@ -1,0 +1,16 @@
+.todo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--v-4);
+}
+
+.todo-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--v-4);
+
+    & h2 {
+        margin-top: var(--v-2);
+        margin-bottom: var(--v-zero);
+    }
+}

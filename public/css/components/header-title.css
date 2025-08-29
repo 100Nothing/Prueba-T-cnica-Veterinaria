@@ -1,0 +1,11 @@
+.header-title {
+    font-size: var(--v-8);
+    font-weight: bold;
+    line-height: 1;
+    color: var(--primary);
+
+    margin: var(--v-zero);
+    padding: var(--v-zero);
+
+    text-overflow: ellipsis;
+}

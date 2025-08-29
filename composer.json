@@ -1,0 +1,13 @@
+{
+    "name": "stt/mascotas",
+    "description": "Sistema de gestión de mascotas - Entrega técnica",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mascotas\\": "src/"
+        }
+    }
+}

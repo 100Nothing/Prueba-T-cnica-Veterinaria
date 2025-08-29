@@ -1,0 +1,26 @@
+.search-container {
+    z-index: 9999;
+    box-sizing: border-box;
+
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+
+    width: var(--v-full);
+    max-width: var(--v-full);
+    height: auto;
+
+    margin: var(--v-zero);
+    padding: var(--v-zero);
+
+    gap: var(--v-2);
+
+    transition: var(--transition-3ms);
+}
+
+.search-height-container {
+    position: relative;
+    height: var(--v-10);
+    max-height: var(--v-10);
+}

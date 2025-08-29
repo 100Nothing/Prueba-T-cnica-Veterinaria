@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+    min-height: var(--v-screen-h);
+    height: var(--v-screen-h);
+    width: var(--v-full);
+
+    margin: var(--v-zero);
+    padding: var(--v-zero);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    scroll-behavior: smooth;
+
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}

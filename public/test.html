@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veterinaria</title>
+
+    <!-- DON'T TOUCH -->
+    <script id="inject">
+        // Main JS
+        const indexjs = document.createElement('script');
+        indexjs.src = './js/index.js';
+        indexjs.type = 'module';
+
+        // Main CSS
+        const indexcss = document.createElement('link');
+        indexcss.rel = 'stylesheet';
+        indexcss.href = './css/index.css';
+
+        // Font Awesome v7
+        const fa = document.createElement('link');
+        fa.rel = 'stylesheet';
+        fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css';
+
+        // Inject Scripts
+        function inject() {
+            document.head.appendChild(indexjs);
+            document.head.appendChild(fa);
+            document.head.appendChild(indexcss);
+            document.getElementById('inject').remove();
+            document.removeEventListener('DOMContentLoaded', inject);
+        }
+
+        // Inject on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', inject);
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img class="header-logo" src="./images/logo.png" alt="Logo">
+            <h1 class="header-title">PÁGINA DE PRUEBA DE DISEÑOS</h1>
+        </div>
+    </header>
+
+    <div class="header-filler"></div>
+
+    <div id="content">
+
+        <aside class="closed">
+            <button class="open-close" title="Abrir/Cerrar">
+                <i id="left-arrow" class="fas fa-angle-double-left hidden"></i>
+                <i id="right-arrow" class="fas fa-angle-double-right"></i>
+            </button>
+            <div class="open-close-filler">
+                <nav>
+                    <div class="nav-button active" data-view="principal" title="Panel de Control">
+                        <i class="fas fa-home"></i>
+                        <p>Panel de Control</p>
+                    </div>
+                    <div class="nav-button" data-view="mascotas" title="Mascotas">
+                        <i class="fas fa-paw"></i>
+                        <p>Mascotas</p>
+                    </div>
+                    <div class="nav-button" data-view="duenos" title="Dueños">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Dueños</p>
+                    </div>
+                    <div class="nav-button" data-view="visitas" title="Visitas">
+                        <i class="fas fa-calendar-check"></i>
+                        <p>Visitas</p>
+                    </div>
+                    <div class="nav-button" data-view="todo" title="Todo">
+                        <i class="fas fa-list"></i>
+                        <p>Todo</p>
+                    </div>
+                </nav>
+        </aside>
+
+        <main id="content-panel">
+
+            <div class="fill">
+
+                <!--
+
+                <div class="card">
+                    <div class="__header">
+                        <div class="__icon"><i class="fa fa-paw" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="__title">Mascota destacada</div>
+                            <div class="">Última visita: 2024-08-01</div>
+                        </div>
+                    </div>
+
+                    <div class="__body">
+                        <p>Contenido variable: texto, imágenes, tags, lo que sea.</p>
+                    </div>
+
+                    <div class="__footer">
+                        <small class="__meta">ID: 123</small>
+                        <button class="__button">Abrir</button>
+                    </div>
+                </div>
+
+                <div class="card --title">
+                    <div class="__header">
+                        <div class="__title">Panel de control</div>
+                    </div>
+                    <div class="__body">Resumen rápido y acciones principales.</div>
+                </div>
+
+                <div class="card --info fill-vertical">
+                    <div class="__header">
+                        <div>
+                            <div class="__title">Mascotas registradas</div>
+                            <div class="__meta">Total en el sistema</div>
+                        </div>
+                    </div>
+                    <div class="__body">
+                        <div class="__value">1,234</div>
+                    </div>
+                    <div class="__footer">
+                        <small>Actualizado hace 5 min</small>
+                        <button class="__button">Detalles</button>
+                    </div>
+                </div>
+
+                <div class="card --menu">
+                    <nav class="menu" aria-label="Navegación">
+                        <a class="__item" href="#dashboard">
+                            <span class="__icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                            <span>Inicio</span>
+                        </a>
+                        <a class="__item" href="#mascotas">
+                            <span class="__icon"><i class="fa fa-paw" aria-hidden="true"></i></span>
+                            <span>Mascotas</span>
+                        </a>
+                        <a class="__item" href="#duenos">
+                            <span class="__icon"><i class="fa fa-user-tie" aria-hidden="true"></i></span>
+                            <span>Dueños</span>
+                        </a>
+                        <a class="__item" href="#visitas">
+                            <span class="__icon"><i class="fa fa-calendar-check" aria-hidden="true"></i></span>
+                            <span>Visitas</span>
+                        </a>
+                        <a class="__item" href="#todo">
+                            <span class="__icon"><i class="fa fa-list" aria-hidden="true"></i></span>
+                            <span>Todo</span>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="card">
+                    <div class="__header">
+                        <div class="__icon"><i class="fa fa-paw" aria-hidden="true"></i></div>
+                        <div>
+                            <div class="__title">Mascota destacada</div>
+                            <div class="">Última visita: 2024-08-01</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fill-vertical --menu">
+                    <div class="__body">
+                        <div class="__header">
+                            <div class="__icon"><i class="fa fa-paw" aria-hidden="true"></i></div>
+                            <div>
+                                <div class="__title">Mascota destacada</div>
+                                <div class="">Última visita: 2024-08-01</div>
+                            </div>
+                        </div>
+
+                        <div class="__body">
+                            <p>Contenido variable: texto, imágenes, tags, lo que sea.</p>
+                        </div>
+
+                        <div class="__footer">
+                            <p class="__meta">ID: 123</p>
+                            <p class="__url">https://ejemplo.com/mascota/123</p>
+                            <button class="__button">Abrir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fill-vertical --menu">
+                    <div class="__body">
+                        <div class="__header">
+                            <div class="__icon"><i class="fa fa-paw" aria-hidden="true"></i></div>
+                            <div>
+                                <div class="__title">Mascota destacada</div>
+                                <div class="">Última visita: 2024-08-01</div>
+                            </div>
+                        </div>
+
+                        <div class="__body">
+                            <p>Contenido variable: texto, imágenes, tags, lo que sea.</p>
+                        </div>
+
+                        <div class="__footer">
+                            <p class="__meta">ID: 123</p>
+                            <p class="__url">https://ejemplo.com/mascota/123</p>
+                            <button class="__button">Abrir</button>
+                        </div>
+                    </div>
+                </div>
+
+            -->
+
+            </div>
+
+        </main>
+
+        <div class="card --modal-menu hidden">
+            <button class="close-modal"><i class="fa fa-times"></i></button>
+            <div class="close-modal-filler"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

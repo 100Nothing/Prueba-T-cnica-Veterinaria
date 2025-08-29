@@ -1,0 +1,139 @@
+:root {
+
+    /** Main Variables */
+
+    --font-color: oklch(14.1% 0.005 285.823); /* Tailwind zinc-950 */
+    --font: 'Aptos', sans-serif;
+
+    --primary: oklch(42.422% 0.19829 265.514); /* Tailwind blue-800 */
+    --secondary: oklch(51.4% 0.222 16.935); /* Tailwind rose-700 */
+    --tertiary: oklch(44.4% 0.011 73.639); /* Tailwind stone-600 */
+    --quaternary: oklch(70.9% 0.01 56.259); /* Tailwind stone-400 */
+
+    --error: oklch(58.6% 0.253 17.585); /* Tailwind rose-600 */
+    --success: oklch(59.6% 0.145 163.225); /* Tailwind emerald-600 */
+
+    --error-bg: oklch(89.2% 0.058 10.001); /* Tailwind rose-200 */
+    --success-bg: oklch(90.5% 0.093 164.15); /* Tailwind emerald-200 */
+
+    --transparent: oklch(44.4% 0.011 73.639 / 0.25); /* Tailwind stone-600 with opacity 25% */
+    --transparent-semi: oklch(44.4% 0.011 73.639 / 0.5); /* Tailwind stone-600 with opacity 50% */
+    --transparent-dark: oklch(44.4% 0.011 73.639 / 0.75); /* Tailwind stone-600 with opacity 75% */
+
+    --bg-primary: oklch(98.5% 0.001 106.423); /* Tailwind stone-50 */
+    --bg-secondary: oklch(92.3% 0.003 48.717); /* Tailwind stone-200 */
+    --bg-tertiary: oklch(97% 0.001 106.424); /* Tailwind stone-100 */
+
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --rounded-sm: 0.25rem;
+    --rounded-md: 0.375rem;
+    --rounded-lg: 0.5rem;
+    --rounded-xl: 0.75rem;
+
+    --border-1px-semi: 1px solid var(--quaternary);
+    --border-1px-dark: 1px solid var(--tertiary);
+    --border-1px-highlight: 1px solid var(--primary);
+    --border-1px-accent: 1px solid var(--secondary);
+    --border-1px-soft: 1px solid var(--transparent);
+    --border-1px-error: 1px solid var(--error);
+    --border-1px-success: 1px solid var(--success);
+
+    --transition-1ms: all 0.1s ease;
+    --transition-3ms: all 0.3s ease;
+    --transition-border-1ms: border 0.1s ease;
+    --transition-outline-1ms: outline 0.1s ease;
+
+    /** Sizing */
+
+    --v-initial: 0.5rem; /* tailwind value-2 = 0.5rem (8px if font size is 16px) */
+
+    --v-screen-h: 100vh;
+    --v-screen-w: 100vw;
+
+    --v-full: 100%;
+    --v-three-quarter: 75%;
+    --v-half: 50%;
+    --v-quarter: 25%;
+    --v-zero: 0;
+    
+    --v-2: calc(var(--v-initial) * 1);
+    --v-3: calc(var(--v-initial) * 1.5);
+    --v-4: calc(var(--v-initial) * 2);
+    --v-5: calc(var(--v-initial) * 2.5);
+    --v-6: calc(var(--v-initial) * 3);
+    --v-7: calc(var(--v-initial) * 3.5);
+    --v-8: calc(var(--v-initial) * 4);
+    --v-9: calc(var(--v-initial) * 4.5);
+    --v-10: calc(var(--v-initial) * 5);
+    --v-12: calc(var(--v-initial) * 6);
+    --v-14: calc(var(--v-initial) * 7);
+    --v-16: calc(var(--v-initial) * 8);
+    --v-18: calc(var(--v-initial) * 9);
+    --v-20: calc(var(--v-initial) * 10);
+    --v-22: calc(var(--v-initial) * 11);
+    --v-24: calc(var(--v-initial) * 12);
+    --v-26: calc(var(--v-initial) * 13);
+    --v-28: calc(var(--v-initial) * 14);
+    --v-30: calc(var(--v-initial) * 15);
+    --v-32: calc(var(--v-initial) * 16);
+    --v-34: calc(var(--v-initial) * 17);
+    --v-36: calc(var(--v-initial) * 18);
+    --v-38: calc(var(--v-initial) * 19);
+    --v-40: calc(var(--v-initial) * 20);
+    --v-42: calc(var(--v-initial) * 21);
+    --v-44: calc(var(--v-initial) * 22);
+    --v-46: calc(var(--v-initial) * 23);
+    --v-48: calc(var(--v-initial) * 24);
+    --v-50: calc(var(--v-initial) * 25);
+    --v-52: calc(var(--v-initial) * 26);
+    --v-54: calc(var(--v-initial) * 27);
+    --v-56: calc(var(--v-initial) * 28);
+    --v-58: calc(var(--v-initial) * 29);
+    --v-60: calc(var(--v-initial) * 30);
+    --v-62: calc(var(--v-initial) * 31);
+    --v-64: calc(var(--v-initial) * 32);
+    --v-66: calc(var(--v-initial) * 33);
+    --v-68: calc(var(--v-initial) * 34);
+    --v-70: calc(var(--v-initial) * 35);
+    --v-72: calc(var(--v-initial) * 36);
+    --v-74: calc(var(--v-initial) * 37);
+    --v-76: calc(var(--v-initial) * 38);
+    --v-78: calc(var(--v-initial) * 39);
+    --v-80: calc(var(--v-initial) * 40);
+    --v-82: calc(var(--v-initial) * 41);
+    --v-84: calc(var(--v-initial) * 42);
+    --v-86: calc(var(--v-initial) * 43);
+    --v-88: calc(var(--v-initial) * 44);
+    --v-90: calc(var(--v-initial) * 45);
+    --v-92: calc(var(--v-initial) * 46);
+    --v-94: calc(var(--v-initial) * 47);
+    --v-96: calc(var(--v-initial) * 48);
+    --v-98: calc(var(--v-initial) * 49);
+    --v-100: calc(var(--v-initial) * 50);
+    --v-102: calc(var(--v-initial) * 51);
+    --v-104: calc(var(--v-initial) * 52);
+    --v-106: calc(var(--v-initial) * 53);
+    --v-108: calc(var(--v-initial) * 54);
+    --v-110: calc(var(--v-initial) * 55);
+    --v-112: calc(var(--v-initial) * 56);
+    --v-114: calc(var(--v-initial) * 57);
+    --v-116: calc(var(--v-initial) * 58);
+    --v-118: calc(var(--v-initial) * 59);
+    --v-120: calc(var(--v-initial) * 60);
+    --v-122: calc(var(--v-initial) * 61);
+    --v-124: calc(var(--v-initial) * 62);
+    --v-126: calc(var(--v-initial) * 63);
+    --v-128: calc(var(--v-initial) * 64);
+
+    /** Elements */
+
+    --body-bg: var(--bg-secondary);
+
+    --header-bg: var(--bg-primary); /* Tailwind stone-50 */
+    --header-h: var(--v-20);
+    --header-w: var(--v-full);
+    --header-padding: var(--v-2) var(--v-zero);
+}

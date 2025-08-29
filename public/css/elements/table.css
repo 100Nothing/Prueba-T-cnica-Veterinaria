@@ -1,0 +1,60 @@
+table {
+    width: var(--v-full) !important;
+    max-width: var(--v-full) !important;
+
+    margin: var(--v-zero) !important;
+    padding: var(--v-zero) !important;
+
+    font-size: var(--v-4) !important;
+    line-height: calc(2.25 / 2) !important;
+
+    color: var(--font-color) !important;
+    background-color: var(--bg-primary) !important;
+
+    border: var(--border-1px-semi) !important;
+    border-radius: var(--rounded-xl) !important;
+    box-shadow: var(--shadow-sm) !important;
+
+    transition: var(--transition-3ms) !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+    &:hover {
+        box-shadow: var(--shadow-md), var(--shadow-sm) !important;
+    }
+}
+
+thead {
+    background-color: var(--bg-secondary) !important;
+}
+
+thead, tbody, tr, td {
+    min-height: var(--v-10) !important;
+    height: var(--v-10) !important;
+}
+
+th {
+    padding: var(--v-2) !important;
+    text-align: left !important;
+    font-weight: 600 !important;
+}
+
+td {
+    justify-items: stretch !important;
+    padding: var(--v-2) !important;
+}
+
+th, td {
+    min-width: var(--v-4) !important;
+    width: auto !important;
+    max-width: var(--v-32) !important;
+    max-height: var(--v-10) !important;
+
+    white-space: nowrap !important;
+    overflow: auto !important;
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-tertiary) !important;
+}

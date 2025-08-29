@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veterinaria</title>
+
+    <!-- DON'T TOUCH -->
+    <script id="inject">
+        // Main JS
+        const indexjs = document.createElement('script');
+        indexjs.src = './js/index.js';
+        indexjs.type = 'module';
+
+        // Main CSS
+        const indexcss = document.createElement('link');
+        indexcss.rel = 'stylesheet';
+        indexcss.href = './css/index.css';
+
+        // Font Awesome v7
+        const fa = document.createElement('link');
+        fa.rel = 'stylesheet';
+        fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css';
+
+        // Inject Scripts
+        function inject() {
+            document.head.appendChild(indexjs);
+            document.head.appendChild(fa);
+            document.head.appendChild(indexcss);
+            document.getElementById('inject').remove();
+            document.removeEventListener('DOMContentLoaded', inject);
+        }
+
+        // Inject on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', inject);
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img class="header-logo" src="./images/logo.png" alt="Logo">
+            <h1 class="header-title">Veterinaria - Jorge Exequiel Arce Mora</h1>
+        </div>
+    </header>
+
+    <div class="header-filler"></div>
+
+    <div id="content">
+
+        <aside>
+            <button class="open-close" title="Abrir/Cerrar">
+                <i id="left-arrow" class="fas fa-angle-double-left hidden"></i>
+                <i id="right-arrow" class="fas fa-angle-double-right"></i>
+            </button>
+            <div class="open-close-filler">
+                <nav>
+                    <div class="nav-button active" data-view="principal" title="Panel de Control">
+                        <i class="fas fa-home"></i>
+                        <p>Panel de Control</p>
+                    </div>
+                    <div class="nav-button" data-view="mascotas" title="Mascotas">
+                        <i class="fas fa-paw"></i>
+                        <p>Mascotas</p>
+                    </div>
+                    <div class="nav-button" data-view="duenos" title="Dueños">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Dueños</p>
+                    </div>
+                    <div class="nav-button" data-view="visitas" title="Visitas">
+                        <i class="fas fa-calendar-check"></i>
+                        <p>Visitas</p>
+                    </div>
+                    <div class="nav-button" data-view="todo" title="Todo">
+                        <i class="fas fa-list"></i>
+                        <p>Todo</p>
+                    </div>
+                </nav>
+        </aside>
+
+        <main id="content-panel">
+
+            <div class="fill">
+
+            </div>
+
+        </main>
+
+        <div class="card --modal-menu hidden">
+            <button class="close-modal"><i class="fa fa-times"></i></button>
+            <div class="close-modal-filler"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+body {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    min-height: var(--v-full);
+    height: var(--v-full);
+    min-width: var(--v-full);
+    width: var(--v-full);
+
+    margin: var(--v-zero);
+    padding: var(--v-zero);
+
+    background-color: var(--body-bg);
+}

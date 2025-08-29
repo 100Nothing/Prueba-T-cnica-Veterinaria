@@ -1,0 +1,34 @@
+/** root.css - Variables */
+@import url('./root.css');
+
+/** scrollbar.css - Scrollbar styling */
+@import url('./scrollbar.css');
+
+/** elements folder - Plain elements styling */
+@import url('./elements/html.css');
+@import url('./elements/body.css');
+@import url('./elements/header.css');
+@import url('./elements/aside.css');
+@import url('./elements/nav.css');
+@import url('./elements/button.css');
+@import url('./elements/table.css');
+
+/** components folder - Components styling */
+@import url('./components/header-content.css');
+@import url('./components/header-logo.css');
+@import url('./components/header-title.css');
+@import url('./components/content.css');
+@import url('./components/content-panel.css');
+@import url('./components/nav-button.css');
+@import url('./components/open-close.css');
+@import url('./components/card.css');
+@import url('./components/search-container.css');
+@import url('./components/search.css');
+@import url('./components/search-results.css');
+@import url('./components/action-form.css');
+
+/** utils folder - Utils styling */
+@import url('./utils/tests.css');
+@import url('./utils/hidden.css');
+@import url('./utils/fill.css');
+@import url('./utils/todo.css');

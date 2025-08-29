@@ -1,0 +1,14 @@
+.fill {
+    display: flex !important;
+    flex-direction: column !important;
+    height: var(--v-full) !important;
+    max-height: var(--v-full) !important;
+    min-width: var(--v-full) !important;
+    width: var(--v-full) !important;
+    max-width: var(--v-full) !important;
+    margin: var(--v-zero) !important;
+    padding: var(--v-zero) !important;
+    gap: var(--v-4);
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}

@@ -1,0 +1,23 @@
+nav {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: var(--v-4);
+
+    min-height: var(--v-zero);
+    height: var(--v-full);
+    min-width: var(--v-zero);
+    width: var(--v-full);
+
+    padding: var(--v-zero);
+    padding-top: var(--v-4);
+    margin: var(--v-zero);
+
+    transition: var(--transition-3ms);
+}
