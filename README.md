@@ -120,6 +120,7 @@ A continuación se listan características que ya están implementadas (código 
 
 * **Importación/Exportación avanzada**: importador CSV/JSON e exportador con mapeo de campos listo; la exportación simple sí funciona, pero la importación masiva fue deshabilitada por riesgo de datos durante las pruebas.
 * **Sistema de login**: Debido a la complejidad del sistema que se desarrolló en este proyecto demo, se optó por pulir cada implementación ya hecha en lugar de incluir un sistema login.
+* **Diseño responsive para pantallas más pequeñas.**
 
 > Nota técnica mínima: La funcionalidad de exporte CSV se mantiene en el repositorio, puede activarse con cambios puntuales en la configuración y la base de datos.
 
