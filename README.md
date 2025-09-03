@@ -26,7 +26,7 @@ Aplicación PHP + JavaScript (SPA) con un único punto de entrada para la API (`
 
      * Windows: `C:/xampp/htdocs/mascotas`
      * Linux (XAMPP): `/opt/lampp/htdocs/mascotas`
-   * Resultado esperado: el directorio `mascotas` debe contener `src/`, `public/`, `vendor/` y los archivos `.sql`.
+   * Resultado esperado: el directorio `mascotas` debe contener `sql/`, `src/`, `public/` y `vendor/`.
 
 2. **Arrancar XAMPP**
 
@@ -34,12 +34,12 @@ Aplicación PHP + JavaScript (SPA) con un único punto de entrada para la API (`
 
 3. **Configuración de base de datos — método rápido con `bootstrap.sql`**
 
-   * El archivo `bootstrap.sql` en la raíz crea la base de datos, las tablas y añade datos de ejemplo: es el camino más rápido para dejar el sistema listo.
+   * El archivo `bootstrap.sql` en la carpeta `sql/` crea la base de datos, las tablas y añade datos de ejemplo: es el camino más rápido para dejar el sistema listo.
 
    **Importar con phpMyAdmin (recomendado para no técnicos):**
 
    * Abra `http://localhost/phpmyadmin` en su navegador.
-   * En la pestaña "Importar", busque y seleccione `bootstrap.sql` desde su equipo.
+   * En la pestaña "Importar", busque y seleccione `sql/bootstrap.sql` desde su equipo.
    * Pulse "Continuar" y espere a que finalice la importación. Al terminar tendrá la base de datos y datos de prueba listos.
 
    **Importar por línea de comandos (alternativa):**
@@ -93,7 +93,7 @@ Aplicación PHP + JavaScript (SPA) con un único punto de entrada para la API (`
 
 ```
 / (raíz)
-├─ bootstrap.sql        # script rápido para crear la BD y poblarla con datos de ejemplo
+├─ sql/                 # scripts rápido para crear la BD y poblarla con datos de ejemplo
 ├─ composer.json
 ├─ src/                 # código PHP: Config, Database, Models, Services
 ├─ public/              # carpeta pública (DocumentRoot ideal)
